@@ -1,0 +1,15 @@
+[project]
+name = "airbnb-listing-analysis"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=2.3.1",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}  # <-- maps root of package to /src
+
+[tool.setuptools.packages.find]
+where = ["src"]
